@@ -2,10 +2,11 @@
   "$schema": "https://mintlify.com/schema.json",
   "name": "Starter Kit",
   "logo": {
-    "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
+    "dark": "/logo/covver_logo_light.png",
+    "light": "/logo/covver_logo_dark.png"
   },
   "favicon": "/favicon.png",
+  "openapi": ["/partners.json"],
   "colors": {
     "primary": "#9563FF",
     "light": "#AE87FF",
@@ -20,63 +21,57 @@
   },
   "topbarLinks": [
     {
-      "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "name": "rnd@covver.io",
+      "url": "mailto:rnd@covver.io"
     }
   ],
   "topbarCtaButton": {
     "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "url": "https://admin.covver.io"
   },
-  "tabs": [
-    {
-      "name": "API Reference",
-      "url": "api-reference"
-    }
-  ],
-  "anchors": [
-    {
-      "name": "Documentation",
-      "icon": "book-open-cover",
-      "url": "https://mintlify.com/docs"
-    },
-    {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
-    },
-    {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
-    }
-  ],
   "navigation": [
     {
-      "group": "Get Started",
-      "pages": ["introduction", "quickstart", "development"]
+      "group": "Introduction",
+      "pages": ["getting-started"]
     },
     {
-      "group": "Essentials",
-      "pages": ["essentials/markdown", "essentials/code", "essentials/images", "essentials/settings", "essentials/navigation"]
-    },
-    {
-      "group": "API Documentation",
-      "pages": ["api-reference/authentication"]
-    },
-    {
-      "group": "Endpoint Examples",
+      "group": "Auth",
       "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/update",
-        "api-reference/endpoint/delete"
+        "api-reference/auth",
+        "api-reference/auth/create-oauth-tokens",
+        "api-reference/auth/refresh-token"
       ]
-    }
+    },
+    {
+      "group": "Products",
+      "pages": [
+        "api-reference/products",
+        "api-reference/products/list-collections",
+        "api-reference/products/list-a-collection-products",
+        "api-reference/products/get-product"
+      ]
+    },
+    {
+      "group": "People",
+      "pages": [
+        "api-reference/people",
+        "api-reference/people/list-people",
+        "api-reference/people/create-people",
+        "api-reference/people/delete-people",
+        "api-reference/people/reward-credits",
+        "api-reference/people/withdraw-credits"
+      ]
+    },
+    {
+      "group": "Orders",
+      "pages": [
+        "api-reference/orders",
+        "api-reference/orders/list-orders",
+        "api-reference/orders/place-order"
+      ]
+    }    
   ],
   "footerSocials": {
-    "twitter": "https://twitter.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "linkedin": "https://www.linkedin.com/company/covver"
   }
 }

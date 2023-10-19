@@ -1,0 +1,24 @@
+---
+title: "Authentication"
+---
+
+Covver's authentication is based on OAuth.  
+To authentication your API requests, you will need to:
+<Steps>
+  <Step title="Get Your Credentials">
+    Get your `clientId` and `clientSecret` from Covver's dev team (rnd@covver.io).
+  </Step>
+  <Step title="Create Access Token">
+    Use your credentials to create an `accessToken` (see below).
+  </Step>
+  <Step title="Use the Access Token">
+    Add the `accessToken` in `Bearer Authentication` for each API Request.
+  </Step>
+</Steps>
+
+ 
+
+## Creating Access Tokens
+There are 2 ways to create access tokens:  
+- [Using your ClientID and ClientSecret](/api-reference/auth/create-oauth-tokens)  
+- [Using a refresh token](/api-reference/auth/refresh-token)
